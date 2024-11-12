@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,7 +20,23 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
+        <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+          <h1>Welcome to Pokémon Tracker!</h1>
+          <p>
+            Click the button below to view and manage your Pokémon collection.
+          </p>
+          <Link href="/collection" passHref>
+            <button
+              style={{
+                padding: "10px 20px",
+                fontSize: "16px",
+                cursor: "pointer",
+              }}
+            >
+              Go to Collection
+            </button>
+          </Link>
+        </div>
         <div className={styles.ctas}>
           <a
             className={styles.primary}

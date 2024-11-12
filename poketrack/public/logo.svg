@@ -1,0 +1,10 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip">
+      <polygon points="0,0 200,0 200,200"/>
+    </clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="red" />
+  <circle cx="100" cy="100" r="100" fill="white" clip-path="url(#clip)" />
+  <line x1="0" y1="0" x2="200" y2="200" stroke="black" stroke-width="10" />
+</svg>
